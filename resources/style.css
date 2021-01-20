@@ -1,0 +1,43 @@
+body {
+    z-index: 5;
+}
+
+
+/*intro area*/
+
+nav {
+    padding: 0;
+    height: 3em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    border: 0.01em solid rgb(194, 172, 145);
+    border-top: none;
+    box-shadow: 0 8px 6px -6px black;
+    position: fixed;
+    top: 0;
+    background-color: #ebebeb;
+    z-index: 10;
+}
+
+ul {
+    position: absolute;
+    right: 0;
+    margin-right: 4em;
+}
+
+li {
+    display: inline-block;
+    margin: 0.1em;
+    padding: 0.2em;
+}
+
+#lander {
+    background-image: url("lander.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 48em;
+    margin: 0 auto;
+    opacity: 0.88;
+    margin-bottom: 10em;
+}
