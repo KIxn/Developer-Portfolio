@@ -1,3 +1,10 @@
+/*global*/
+
+html {
+    font-size: small;
+    background-color: #dbdbdb;
+}
+
 body {
     z-index: 5;
 }
@@ -26,18 +33,41 @@ ul {
     margin-right: 4em;
 }
 
-li {
+nav li {
     display: inline-block;
     margin: 0.1em;
-    padding: 0.2em;
+    padding: 0.4em;
+    font-size: 1.2rem;
+}
+
+nav li a {
+    text-decoration: underline;
+    color: inherit;
 }
 
 #lander {
+    position: relative;
+    top: -1em;
     background-image: url("lander.jpg");
     background-size: cover;
     width: 100%;
-    height: 48em;
+    height: 55em;
     margin: 0 auto;
     opacity: 0.88;
     margin-bottom: 10em;
+    /***************************/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#characteristics {
+    display: grid;
+    padding: 1em;
+    margin: auto auto;
+    width: 75%;
+    height: 75%;
+    background-color: #ebebeb;
+    opacity: 0.25;
+    border: 1em solid black;
 }
