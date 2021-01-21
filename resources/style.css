@@ -63,6 +63,9 @@ nav li a {
 
 #characteristics {
     display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 0 1em;
     padding: 1em;
     margin: auto auto;
     width: 75%;
