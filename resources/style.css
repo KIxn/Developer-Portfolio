@@ -9,6 +9,11 @@ body {
     z-index: 5;
 }
 
+p {
+    height: fit-content;
+    width: fit-content;
+}
+
 
 /*intro area*/
 
@@ -64,13 +69,40 @@ nav li a {
 #characteristics {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    grid-gap: 0 1em;
+    grid-template-rows: repeat(1fr, 4);
+    grid-gap: 1em 1em;
+    justify-items: stretch;
+    align-content: stretch;
     padding: 1em;
     margin: auto auto;
     width: 75%;
     height: 75%;
-    background-color: #ebebeb;
-    opacity: 0.25;
-    border: 1em solid black;
+    background-color: rgba(235, 235, 235, 0.4);
+    border: 1em solid rgba(0, 0, 0, 0.45);
+    color: black;
+    overflow: auto;
+}
+
+#characteristics div {
+    height: fit-content;
+    width: fit-content;
+}
+
+#charectcap {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 2;
+    justify-self: center;
+    align-self: start;
+    color: black;
+    height: fit-content;
+    font-size: 3.5rem;
+    text-decoration: underline;
+}
+
+#characteristics .charact {
+    font-size: 2rem;
+}
+
+#characteristics .info {
+    font-size: 1.3rem;
 }
