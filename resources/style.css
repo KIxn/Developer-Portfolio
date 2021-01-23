@@ -59,8 +59,7 @@ nav li a {
     height: 62em;
     margin: 0 auto;
     opacity: 0.88;
-    margin-bottom: 10em;
-    /***************************/
+    margin-bottom: 5em;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,7 +76,7 @@ nav li a {
     margin: auto auto;
     width: 75%;
     height: 75%;
-    background-color: rgba(235, 235, 235, 0.4);
+    background-color: rgba(235, 235, 235, 0.65);
     border: 1em solid rgba(0, 0, 0, 0.45);
     color: black;
     overflow: auto;
@@ -105,4 +104,50 @@ nav li a {
 
 #characteristics .info {
     font-size: 1.3rem;
+}
+
+
+/*main body/about me/skills/jobs*/
+
+section {
+    border: 0.3em solid rgba(0, 0, 0, 0.45);
+    border-radius: 0.2em;
+    display: flex;
+    justify-content: center;
+    flex: 2 1 100%;
+    flex-flow: row wrap;
+    margin: 1em;
+    text-align: center;
+    font-size: 2rem;
+}
+
+section figure img {
+    width: 25rem;
+    height: 25rem;
+    border: 0.1em solid rgba(51, 1, 1, 0.23);
+    border-radius: 50%;
+}
+
+#skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: '. . .' 'i i i' 'i i i';
+    justify-content: center;
+    align-items: center;
+}
+
+#skills i {
+    text-align: center;
+    margin: 0.4em;
+}
+
+form {
+    display: grid;
+    margin: 0.5em;
+}
+
+form label {
+    margin: 0.3em;
+    padding: 0.1em;
 }

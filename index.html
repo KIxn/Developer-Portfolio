@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="resources/reset.css" type="text/css">
     <link rel="stylesheet" href="resources/all.min.css" type="text/css">
     <link rel="stylesheet" href="resources/style.css" type="text/css">
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 </head>
 
 <body style="background-color: #dbdbdb;">
@@ -16,11 +17,11 @@
         <nav>
             <i class="fab fa-2x fa-connectdevelop"> Kian R</i>
             <ul>
-                <li><a href="">About Me</a></li>
+                <li><a href="#abtme">About Me</a></li>
                 <li>
-                    <a href="">Projects</a></li>
+                    <a href="#proj">Skills</a></li>
                 <li>
-                    <a href="">Contact</a></li>
+                    <a href="#cont">Contact</a></li>
             </ul>
         </nav>
         <div id="lander">
@@ -55,7 +56,41 @@
         </div>
     </header>
     <main>
-
+        <section id="abtme">
+            <h2 style="width: 100%; height: fit-content; justify-items: center;">About Me:</h2>
+            <figure style="margin: 0 2em 1.4em 2em;">
+                <img src="resources/460483.jpg" alt="mac is lyf">
+                <figcaption style="margin: auto auto; font-size: 1.2rem; font-weight: 600; text-decoration: dotted;">This is just mac</figcaption>
+            </figure>
+            <p style="display: inline; font-size: 1.2rem;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto, eum quis dolores commodi nemo dolorum culpa quisquam magni temporibus, dolor perferendis reiciendis hic delectus, doloribus quia minus consequuntur eveniet eaque. Lorem ipsum
+                dolor sit, amet consectetur adipisicing elit. Obcaecati id deserunt rem voluptatum delectus in doloremque iste, fugit ut esse. Nisi dicta dolorem id dolor necessitatibus est earum, ipsum maxime? Lorem ipsum dolor sit, amet consectetur
+                adipisicing elit. Voluptatum suscipit fugiat atque quae culpa perferendis consequuntur, exercitationem eaque nam dolorum distinctio dolore, iusto, beatae tenetur obcaecati sint quidem cumque magnam!</p>
+            <br>
+            <p style="display: inline; font-size: 1.2rem;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus possimus explicabo voluptates. Cumque dolore repudiandae explicabo sunt quibusdam facere laudantium natus vel impedit animi molestiae, eius asperiores earum esse minima. Lorem
+                ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae quam voluptatum quisquam quaerat distinctio consequuntur ipsa. Perferendis fugiat necessitatibus quia nam non perspiciatis, sequi ut amet? Et sunt excepturi aliquid! Lorem,
+                ipsum dolor sit amet consectetur adipisicing elit. Magni labore ullam reprehenderit corporis voluptatum eum magnam totam reiciendis. Quasi voluptatum dolor facere sequi suscipit sed corrupti aspernatur sunt ipsa culpa!</p>
+        </section>
+        <section id="skills">
+            <h2 style="height: fit-content; grid-area: 1 / 1 / span 1 / span 3; text-decoration: underline;">Programming Skills</h2>
+            <i class="fab fa-cuttlefish"> C++</i>
+            <i class="fab fa-css3"> CSS</i>
+            <i class="fab fa-java"> Java</i>
+            <i class="fab fa-python"> Python</i>
+            <i class="fab fa-html5"> HTML</i>
+            <i class="fab fa-js"> JavaScript</i>
+        </section>
+        <section id="proj">
+            <h2 style="height: fit-content; text-decoration: underline; width: 100%;">Have you got any developer work for me?</h2>
+            <form action="">
+                <label for="subj" style="width: 100%;">Subject of Concern:</label>
+                <input type="text" name="subj" id="subject">
+                <label for="body">What needs to be done?</label>
+                <textarea name="body" id="body" cols="30" rows="10"></textarea>
+                <label for="resp">Enter your Business Email:</label>
+                <input type="text" name="resp" id="respondant" placeholder="I Promise I'll get back to you :)">
+                <input type="submit" name="sub" id="subbtn" style="margin: 1em;">
+            </form>
+        </section>
     </main>
     <footer>
 
